@@ -1,33 +1,10 @@
 def openai_extract_lab_data(text):
-    openai.api_key = os.getenv("OPENAI_API_KEY", "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")
+    openai.api_key = os.getenv("OPENAI_API_KEY")
     # Fine-tuned prompt for better and accurate extraction
     prompt = [
         {
             "role": "system",
-            "content": """You are a specialized assistant trained to convert lab reports into structured JSON data. 
-            Please convert the text into a valid JSON format adhering to the following rules:
-            The expected format is:
-            [
-                {
-                    "name": "Test Name 1",
-                    "result": "Result 1",
-                    "range": {
-                        "low": "Low Range 1",
-                        "high": "High Range 1"
-                    },
-                    "unit": "Unit 1"
-                },
-                {
-                    "name": "Test Name 2",
-                    "result": "Result 2",
-                    "range": {
-                        "low": "Low Range 2",
-                        "high": "High Range 2"
-                    },
-                    "unit": "Unit 2"
-                },
-                // ... (additional test data follows the same format)
-          ]"""
+            "content": " define how you want gpt to produce response"
 
         },
         {
