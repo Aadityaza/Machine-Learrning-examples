@@ -1,5 +1,5 @@
 {
-  "best_metric": 0.2520853877067566,
+  "best_metric": 0.2356450855731964,
   "best_model_checkpoint": "distilbert-base-uncased-lora-text-classification\\checkpoint-200",
   "epoch": 1.0,
   "eval_steps": 500,
@@ -13,10 +13,10 @@
       "eval_accuracy": {
         "accuracy": 0.91
       },
-      "eval_loss": 0.2520853877067566,
-      "eval_runtime": 0.3094,
-      "eval_samples_per_second": 646.478,
-      "eval_steps_per_second": 161.619,
+      "eval_loss": 0.2356450855731964,
+      "eval_runtime": 0.3317,
+      "eval_samples_per_second": 603.021,
+      "eval_steps_per_second": 150.755,
       "step": 200
     }
   ],
